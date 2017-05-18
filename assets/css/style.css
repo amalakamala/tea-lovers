@@ -14,7 +14,8 @@ Código Hexadecimal gris footer: #3B3B3B
 
 /*Sección Bienvenida*/
 #bienvenida{ 
-	background: url('../img/fondo-bienvenida.jpg');  
+	background: url('../img/fondo-bienvenida.jpg');
+	font-family: 'Lato', sans-serif;	  
 	background-size: cover; 
 	background-position: center; 
 	padding: 50px 0;  
