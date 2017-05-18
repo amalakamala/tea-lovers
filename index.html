@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 	  	<title>Tea Lovers</title>
-	  	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/style.css">	
 	</head>
 	<body>
+
 		<!--Sección bienvenida --> 
 		<section id="bienvenida">
 			<div class="logo">
@@ -20,7 +21,34 @@
 		<!--Sección Newsletter -->
 		<section class="color">
 			<div class="newsletter">
-				<button id="suscribirse">Suscríbite a nuestro newsletter</button>
+				<div class="new-titulo"> 
+					<h1 class="el-h">¿TE GUSTA EL TÉ?</h1>
+				</div>
+				
+				<form action="#" method="post">
+					<div><div for="Nombre" class="label">Nombre:</div>
+					<input type="text" id="nombre" placeholder="Escribe tú nombre"><br></div>
+
+					<div><div for="Email" class="label">Email:</div>
+					<input type="email" id="email" placeholder="ejemplo@tecomosenora.cl"><br></div>
+
+					<div><div for="Dirección" class="label">Dirección:</div>
+					<input type="text" id="address" placeholder="Escribe tú dirección"><br></div>
+
+					<div><div for="pack" class="label">Té favorito:</div>
+					<select name="pack" id="selector">
+						<option value="" selected="selected" disabled>Escoje tu opción</option>
+						<option value="negro">Té Negro</option>
+						<option value="verde">Té Verde</option>
+						<option value="rojo">Té Rojo</option>
+						<option value="blanco">Té Blanco</option>
+						<option value="oolong">Té Oolong</option>					
+					</select><br></div><br>
+					<input type="checkbox" id="checkbox" name="checkbox"><div class="checkbox"><label for="checkbox">Quiero recibir muestra gratis</label></div><br>
+
+					<button value="Submit" id="suscribirse" onclick="validateForm(); return false">Suscríbite a nuestro newsletter</button>
+					<!--Lo siento estoy demasiado cansada para hacer un addEventListener y mensajes a su costado con las validaciones, hice solamente validaciones con alert -->
+				</form>			
 			</div>
 		</section>
 
@@ -30,7 +58,7 @@
 				<img class="llogo" src="assets/img/logo.png" alt="logo">
 			</div>
 			<div class="contenido">
-				<h1<Nuesta <br> Pasión</h1>
+				<h1>Nuesta <br> Pasión</h1>
 				<p>El té es una bebida utilizada habitualmente por la medicina natural de las civilizaciones orientales para aprovechar sus propiedades terapéuticas.Algunas de sus versiones son:</p>
 			</div>
 		</section>
@@ -59,7 +87,6 @@
 				</div>
 			</div>
 		</section>
-		
 		<!-- Sección disfruta-->
 		<section id="disfruta">
 			<div class="logo">
@@ -73,5 +100,7 @@
 		<footer>
 			<p>Té Encanto: Av. Italia 1317, Providencia.</p>
 		</footer>
+		<script src="assets/js/main.js" type="text/javascript"></script>
+		<script src="assets/js/evento.js" type="text/javascript"></script>
 	</body>
 </html>
