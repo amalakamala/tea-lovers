@@ -1,17 +1,10 @@
-/* 
-Código Hexadecimal verde: #8EC641
-Código Hexadecimal gris footer: #3B3B3B
-*/
-
-
 *{
 	margin: 0; 
 	padding: 0; 
 	box-sizing: border-box; 
-	font-family: 'Relawey'; 
+	font-family: 'Lato', sans-serif; 
 	font-size: 16px;
 }
-
 
 /*Sección Bienvenida*/
 #bienvenida{ 
@@ -108,5 +101,9 @@ footer{
 	color: white;
 }
 
+/* 
+Código Hexadecimal verde: #8EC641
+Código Hexadecimal gris footer: #3B3B3B
+*/
 
 
